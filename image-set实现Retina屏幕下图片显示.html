@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>image-set实现Retina屏幕下图片显示</title>
+    <style>html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}h1,h2,h3,h4,h5,h6{font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}</style>
+    <style>
+        .logo{
+            width: 134px;
+            height: 44px;
+            background-image: url("http://mat1.gtimg.com/www/images/qq2012/qqlogo_1x.png");
+            background-image: image-set(url("http://mat1.gtimg.com/www/images/qq2012/qqlogo_1x.png") 1px, url("http://mat1.gtimg.com/www/images/qq2012/qqlogo_2x.png") 2px);
+            background-image: -webkit-image-set(url("http://mat1.gtimg.com/www/images/qq2012/qqlogo_1x.png") 1px, url("http://mat1.gtimg.com/www/images/qq2012/qqlogo_2x.png") 2px);
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="logo"></h1>
+</body>
+</html>

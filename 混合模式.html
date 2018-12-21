@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>渐变边框</title>
+    <style>html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}h1,h2,h3,h4,h5,h6{font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}</style>
+    <style>
+        .preview__inner{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: #fff;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 3px;
+        }
+        .preview__screen{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            cursor: move;
+            -webkit-transition: background-color 0.2s;
+            transition: background-color 0.2s;
+        }
+        .blend__mode{
+            background-blend-mode: overlay;
+            background: url("http://ilyashubin.github.io/FilterBlend/img/doge.png") 139px 202px / 540px no-repeat, url("http://ilyashubin.github.io/FilterBlend/img/nightsky.jpg") center center / 1665px no-repeat transparent;
+            filter: blur(3px);
+        }
+    </style>
+</head>
+<body>
+    <div class="preview__inner">
+        <div class="preview__screen blend__mode"></div>
+    </div>
+    <a href="http://ilyashubin.github.io/FilterBlend/" target="_blank">参考链接</a>
+</body>
+</html>

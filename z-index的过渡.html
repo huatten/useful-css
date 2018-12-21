@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>z-index过渡</title>
+    <style>html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}h1,h2,h3,h4,h5,h6{font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}</style>
+    <style>
+        section {
+            display: block;
+            position: relative;
+        }
+        div {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+        }
+        .one{
+            width: 800px;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background: hsla(1,70%,50%,.5);
+            -moz-transition:all 3s;
+            -webkit-transition:all 3s;
+            transition:all 3s;
+        }
+        .one:hover{
+            z-index: 6;
+            background: hsla(1,100%,10%,1);
+        }
+        .two {
+            z-index: 2;
+            top: 120px;
+            left: 0;
+            background: hsla(50,70%,50%,.5);
+        }
+        .three {
+            z-index: 3;
+            top: 120px;
+            left: 160px;
+            background: hsla(120,70%,50%,.5);
+        }
+        .four {
+            z-index: 4;
+            top: 120px;
+            left: 320px;
+            background: hsla(220,70%,50%,.5);
+        }
+        .five {
+            z-index: 5;
+            top: 120px;
+            left: 480px;
+            background: hsla(300,70%,50%,.5);
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div class="one">One</div>
+    <div class="two">Two</div>
+    <div class="three">Three</div>
+    <div class="four">Four</div>
+    <div class="five">Five</div>
+</section>
+</body>
+</html>

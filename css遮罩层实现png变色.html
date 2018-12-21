@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css遮罩层实现png变色</title>
+    <style>html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}h1,h2,h3,h4,h5,h6{font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}</style>
+    <style>
+        .box{
+            width: 64px;
+            height: 64px;
+            margin: 100px auto;
+            background-color: deeppink;
+            -webkit-mask: url("./image/happy.svg") no-repeat;
+            -moz-mask: url("./image/happy.svg") no-repeat;
+            -ms-mask: url("./image/happy.svg") no-repeat;
+            -o-mask: url("./image/happy.svg") no-repeat;
+            mask: url("./image/happy.svg") no-repeat;
+            -webkit-mask-size: 100% 100%;
+            -moz-mask-size: 100% 100%;
+            -ms-mask-size: 100% 100%;
+            -o-mask-size: 100% 100%;
+            mask-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

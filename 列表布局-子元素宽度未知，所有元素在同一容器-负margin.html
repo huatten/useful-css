@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表布局-子元素宽度未知，所有元素在同一容器-负margin</title>
+    <style>html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}h1,h2,h3,h4,h5,h6{font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}</style>
+    <style>
+        p{text-align: center;}
+        .wrapper{
+            width: 362px;
+            padding: 10px;
+            margin: 150px auto;
+            border: 1px solid rgb(240, 103, 103);
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -20px;
+            margin-bottom: -20px;
+        }
+        .container .item{
+            display: inline-block;
+            text-align: center;
+            padding: 5px 10px;
+            background: rgb(103, 164, 243);
+            border-radius: 5px / 5px;
+            color: #fff;
+            font-size: 14px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<!--布局思路-->
+<p>思路：用一个wrapper包在最外层，container设置负margin来抵消item的外边距</p>
+<div class="wrapper">
+    <div class='container'>
+        <div class='item'>两个才能成一行呀</div>
+        <div class='item'>两个才能成一行呀</div>
+        <div class='item'>这三个字</div>
+        <div class='item'>四个</div>
+        <div class='item'>独成一行呀独成一行呀独成一行呀独成</div>
+        <div class='item'>两个才能成一行呀</div>
+        <div class='item'>四个</div>
+    </div>
+</div>
+</body>
+</html>

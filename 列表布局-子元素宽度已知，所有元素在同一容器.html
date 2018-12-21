@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表布局-子元素宽度已知</title>
+    <style>html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}h1,h2,h3,h4,h5,h6{font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}</style>
+    <style>
+        p{text-align: center;}
+        .container{
+            width: 362px;
+            padding: 10px;
+            margin: 150px auto;
+            font-size: 0;
+            border: 1px solid rgb(240, 103, 103);
+        }
+        .container .item{
+            width: 100px;
+            height: 30px;
+            display: inline-block;
+            text-align: center;
+            line-height: 30px;
+            background: rgb(103, 164, 243);
+            border-radius: 5px / 5px;
+            color: #fff;
+            font-size: 14px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+        .item:nth-child(3n){
+            margin-right: 0;
+        }
+        .item:nth-last-child(-n+3){
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<!--布局思路-->
+<p>思路：item在一个容器中，每第三个去掉margin-right，最后三个取消margin-bottom</p>
+<div class='container'>
+    <div class='item'>最多放三个</div>
+    <div class='item'>最多放三个</div>
+    <div class='item'>最多放三个</div>
+    <div class='item'>最多放三个</div>
+    <div class='item'>最多放三个</div>
+    <div class='item'>最多放三个</div>
+    <div class='item'>最多放三个</div>
+    <div class='item'>最多放三个</div>
+</div>
+</body>
+</html>
