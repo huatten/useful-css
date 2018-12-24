@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b1ae40f-db99-4e33-9e42-dc153bc7719b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Ivyjohnson.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css遮罩层实现png变色.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image-set实现Retina屏幕下图片显示.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media-Query实现Retina屏幕下图片显示.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z-index的过渡.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/列表布局-子元素宽度已知或未知，且元素按照行数在相应容器中.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/列表布局-子元素宽度已知，所有元素在同一容器.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/列表布局-子元素宽度未知，所有元素在同一容器-flex.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/列表布局-子元素宽度未知，所有元素在同一容器-负margin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/混合模式.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/渐变边框.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/单列布局头尾内容等宽-flex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/单列布局头尾自适应内容定宽-flex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/粘连布局.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,29 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="z-index的过渡.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/z-index的过渡.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1431">
-              <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="混合模式.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/混合模式.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="837">
               <caret line="31" column="30" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="image-set实现Retina屏幕下图片显示.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/image-set实现Retina屏幕下图片显示.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="88" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="88" />
             </state>
           </provider>
         </entry>
@@ -89,11 +64,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="css遮罩层实现png变色.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="css遮罩层实现png变色.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css遮罩层实现png变色.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+            <state relative-caret-position="540">
+              <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="单列布局头尾内容等宽-flex.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/单列布局头尾内容等宽-flex.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="粘连布局.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/粘连布局.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="757">
+              <caret line="38" column="74" selection-start-line="38" selection-start-column="74" selection-end-line="38" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="单列布局头尾自适应内容定宽-flex.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/单列布局头尾自适应内容定宽-flex.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="5" column="68" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -134,6 +136,12 @@
         <option value="$PROJECT_DIR$/列表布局-子元素宽度未知，所有元素在同一容器-flex.html" />
         <option value="$PROJECT_DIR$/列表布局-子元素宽度未知，所有元素在同一容器-负margin.html" />
         <option value="$PROJECT_DIR$/css遮罩层实现png变色.html" />
+        <option value="$PROJECT_DIR$/单列布局.html" />
+        <option value="$PROJECT_DIR$/单列布局--flex.html" />
+        <option value="$PROJECT_DIR$/单列布局-flex.html" />
+        <option value="$PROJECT_DIR$/单列布局头尾自适应内容定宽-flex.html" />
+        <option value="$PROJECT_DIR$/单列布局头尾内容等宽-flex.html" />
+        <option value="$PROJECT_DIR$/粘连布局.html" />
       </list>
     </option>
   </component>
@@ -203,27 +211,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.css遮罩层实现png变色.html">
-    <configuration name="列表布局-子元素宽度未知，所有元素在同一容器-flex.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/useful-css/列表布局-子元素宽度未知，所有元素在同一容器-flex.html" />
+  <component name="RunManager" selected="JavaScript Debug.粘连布局.html">
     <configuration name="列表布局-子元素宽度未知，所有元素在同一容器-负margin.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/useful-css/列表布局-子元素宽度未知，所有元素在同一容器-负margin.html" />
-    <configuration name="列表布局-子元素宽度已知，所有元素在同一容器.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/useful-css/列表布局-子元素宽度已知，所有元素在同一容器.html" />
     <configuration name="列表布局-子元素宽度已知或未知，且元素按照行数在相应容器中.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/useful-css/列表布局-子元素宽度已知或未知，且元素按照行数在相应容器中.html" />
+    <configuration name="单列布局头尾内容等宽-flex.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/useful-css/单列布局头尾内容等宽-flex.html" />
+    <configuration name="单列布局头尾自适应内容定宽-flex.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/useful-css/单列布局头尾自适应内容定宽-flex.html" />
+    <configuration name="粘连布局.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/useful-css/粘连布局.html" />
     <configuration name="css遮罩层实现png变色.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/useful-css/css遮罩层实现png变色.html" />
-    <configuration name="media-Query实现Retina屏幕下图片显示.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/useful-css/media-Query实现Retina屏幕下图片显示.html" />
     <list>
-      <item itemvalue="JavaScript Debug.media-Query实现Retina屏幕下图片显示.html" />
-      <item itemvalue="JavaScript Debug.列表布局-子元素宽度已知，所有元素在同一容器.html" />
-      <item itemvalue="JavaScript Debug.列表布局-子元素宽度未知，所有元素在同一容器-flex.html" />
       <item itemvalue="JavaScript Debug.列表布局-子元素宽度未知，所有元素在同一容器-负margin.html" />
       <item itemvalue="JavaScript Debug.css遮罩层实现png变色.html" />
+      <item itemvalue="JavaScript Debug.单列布局头尾内容等宽-flex.html" />
+      <item itemvalue="JavaScript Debug.单列布局头尾自适应内容定宽-flex.html" />
+      <item itemvalue="JavaScript Debug.粘连布局.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.粘连布局.html" />
+        <item itemvalue="JavaScript Debug.单列布局头尾自适应内容定宽-flex.html" />
+        <item itemvalue="JavaScript Debug.单列布局头尾内容等宽-flex.html" />
         <item itemvalue="JavaScript Debug.css遮罩层实现png变色.html" />
         <item itemvalue="JavaScript Debug.列表布局-子元素宽度未知，所有元素在同一容器-负margin.html" />
-        <item itemvalue="JavaScript Debug.列表布局-子元素宽度未知，所有元素在同一容器-flex.html" />
-        <item itemvalue="JavaScript Debug.列表布局-子元素宽度已知，所有元素在同一容器.html" />
-        <item itemvalue="JavaScript Debug.media-Query实现Retina屏幕下图片显示.html" />
       </list>
     </recent_temporary>
   </component>
@@ -239,12 +247,12 @@
       <updated>1545018022601</updated>
       <workItem from="1545018025218" duration="6017000" />
       <workItem from="1545101725292" duration="6703000" />
-      <workItem from="1545287275253" duration="1456000" />
+      <workItem from="1545287275253" duration="5201000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14176000" />
+    <option name="totallyTimeSpent" value="17921000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -461,8 +469,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css遮罩层实现png变色.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        <state relative-caret-position="540">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/单列布局头尾自适应内容定宽-flex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="68" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/单列布局头尾内容等宽-flex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/粘连布局.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="757">
+          <caret line="38" column="74" selection-start-line="38" selection-start-column="74" selection-end-line="38" selection-end-column="74" />
         </state>
       </provider>
     </entry>

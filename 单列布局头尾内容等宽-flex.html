@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>单列布局头尾内容等宽-flex</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}h1,h2,h3,h4,h5,h6{font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}</style>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;   /*重要！！！*/
+        }
+        #app{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column; /*重要！！！*/
+
+        }
+        .header,.footer{
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background: #11b95c;
+        }
+        .content{
+            width: 100%;
+            background: #f5f5f5;
+            flex: 1;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+        .content p{
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        常见的单列布局：
+        1.header、footer和content等宽
+        2.header和footer等宽，content略窄
+    -->
+    <div id="app">
+        <header class="header">头部</header>
+        <div class="content">
+            <p>header、footer和content等宽的单列布局</p>
+            <p>header、footer和content等宽的单列布局</p>
+            <p>header、footer和content等宽的单列布局</p>
+            <p>header、footer和content等宽的单列布局</p>
+            <p>header、footer和content等宽的单列布局</p>
+            <p>header、footer和content等宽的单列布局</p>
+            <p>header、footer和content等宽的单列布局</p>
+            <p>header、footer和content等宽的单列布局</p>
+            <p>header、footer和content等宽的单列布局</p>
+            <p>header、footer和content等宽的单列布局</p>
+            <p>header、footer和content等宽的单列布局</p>
+            <p>header、footer和content等宽的单列布局</p>
+            <p>header、footer和content等宽的单列布局</p>
+            <p>header、footer和content等宽的单列布局</p>
+            <p>header、footer和content等宽的单列布局</p>
+            <p>header、footer和content等宽的单列布局</p>
+            <p>header、footer和content等宽的单列布局</p>
+            <p>header、footer和content等宽的单列布局</p>
+            <p>header、footer和content等宽的单列布局</p>
+            <p>header、footer和content等宽的单列布局</p>
+            <p>header、footer和content等宽的单列布局</p>
+        </div>
+        <footer class="footer">尾部</footer>
+    </div>
+</body>
+</html>
