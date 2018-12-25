@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex布局计算-flex-grow</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}h1,h2,h3,h4,h5,h6{font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}</style>
+    <style>
+        .flex{
+            max-width: 600px;
+            display: flex;
+            margin: 100px auto;
+        }
+        .flex li{
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            color: #fff;
+        }
+        .flex .item1{
+            background: #1d90e6;
+            flex: 2 0 100px;    /*flex-grow, flex-shrink, flex-basis*/
+        }
+        .flex .item2{
+            background: #4db3ff;
+            flex: 0 0 150px;
+        }
+        .flex .item3{
+            background: #20a0ff;
+            flex: 2 0 50px;
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <ul class="flex">
+        <li class="item1">2 0 100px</li>
+        <li class="item2">0 0 150px</li>
+        <li class="item3">2 0 50px</li>
+    </ul>
+    <h3>Available space = (container size - flex-basis siblings total)</h3>
+    <h3>Available space = 600px - (100px + 150px + 50px) = 300px</h3>
+    <br/>
+    <hr>
+    <br/>
+    <h3>Grow unit = (Available space / Sum Grow siblings total)</h3>
+    <h3>Grow unit = 300px / (2 + 0 + 2) = 75px</h3>
+    <br/>
+    <hr>
+    <br/>
+    <h3>Flex item size = (Flex basis + (Grow Unit * num))</h3>
+    <h3>Flex item1 size = 100 + 75 * 2 = 250px</h3>
+    <br/>
+    <hr>
+    <br/>
+    <h3>item1: 100 + (75 * 2) = 250</h3>
+    <h3>item2: 150 + (75 * 0) = 150</h3>
+    <h3>item3: 50 + (75 * 2) = 200</h3>
+</body>
+</html>

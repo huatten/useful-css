@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>九宫格布局-flex</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}h1,h2,h3,h4,h5,h6{font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}</style>
+    <style>
+        .flex{
+            max-width: 300px;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 100px auto;
+        }
+        .flex li{
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            border: 1px solid #4db3ff;
+            flex: 0 0 100px;
+            margin-top: -1px;
+            margin-left: -1px;
+        }
+        .flex li.item2{order: -1;}
+        .flex li.item8{order: 1;}
+
+    </style>
+</head>
+<body>
+    <ul class="flex">
+        <li class="item1">1</li>
+        <li class="item2">2</li>
+        <li class="item3">3</li>
+        <li class="item4">4</li>
+        <li class="item5">5</li>
+        <li class="item6">6</li>
+        <li class="item7">7</li>
+        <li class="item8">8</li>
+        <li class="item9">9</li>
+    </ul>
+
+</body>
+</html>

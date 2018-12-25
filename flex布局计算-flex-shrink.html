@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex布局计算-flex-shrink</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}h1,h2,h3,h4,h5,h6{font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}</style>
+    <style>
+        .flex{
+            max-width: 600px;
+            display: flex;
+            margin: 100px auto;
+        }
+        .flex li{
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            color: #fff;
+        }
+        .flex .item1{
+            background: #1d90e6;
+            flex: 0 1 200px;    /*flex-grow, flex-shrink, flex-basis*/
+        }
+        .flex .item2{
+            background: #4db3ff;
+            flex: 0 2 200px;
+        }
+        .flex .item3{
+            background: #20a0ff;
+            flex: 0 3 200px;
+        }
+        .flex .item4{
+            background: #0082e6;
+            flex: 0 1 200px;
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <ul class="flex">
+        <li class="item1">0 1 200px</li>
+        <li class="item2">0 2 200px</li>
+        <li class="item3">0 3 200px</li>
+        <li class="item4">0 1 200px</li>
+    </ul>
+    <h3>Flex Item shrunk = Basis - (Shrink num / Total shrink nums * overflow space)</h3> <br/>
+    <h3>Total items (1400) = Item1(1 * 200) + Item2(2 * 200) + Item3(3 * 200) + Item4(1 * 200)</h3> <br/>
+    <h3>Item 2 shrink factor = Item 2 (2 x 200) / Total Items (1400) = 0.286</h3> <br/>
+    <h3>Item 2 shrink factor = Item 2 shrink num(2) / Total shrink nums (7) = 0.28</h3> <br/>
+    <hr>
+    <br/>
+    <h3>Space removed from Item 2 = Item 2 shrink factor (0.28) * Negative space (-200px) = -57.14</h3> <br/>
+    <h3>Item2 size = 200 - 57.14 = 142.86</h3> <br/>
+    <hr>
+    <br/>
+    <h3>item1: 200 + (-200 * 1/7) = 171.42</h3><br/>
+    <h3>item2: 200 + (-200 * 2/7) = 142.86</h3><br/>
+    <h3>item3: 200 + (-200 * 3/7) = 114.28</h3><br/>
+    <h3>item4: 200 + (-200 * 1/7) = 171.42</h3>
+</body>
+</html>
