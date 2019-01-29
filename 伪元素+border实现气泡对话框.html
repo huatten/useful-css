@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素+border实现气泡对话框</title>
+    <style>html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}h1,h2,h3,h4,h5,h6{font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}</style>
+    <style>
+      .border{
+        overflow: hidden;
+      }
+      .border div{
+        float: left;
+        margin: 20px;
+      }
+      .border .border-item1{
+        width: 30px;
+        height: 30px;
+        border: 15px solid deeppink;
+      }
+      .border .border-item2{
+        width: 30px;
+        height: 30px;
+        border: 15px solid;
+        border-color: #FFA500 #F00 #008000 #808080;
+      }
+      .border .border-item3{
+        width: 0;
+        height: 0;
+        border: 15px solid;
+        border-color: transparent #F00 transparent transparent;
+      }
+      .pop {
+        margin: 30px;
+        min-width: 200px;
+        max-width: 300px;
+        padding: 10px;
+        background: #e91e63;
+        border-radius: 8px;
+        position: relative;
+      }
+      .pop::after{
+        display: block;
+        content: '';
+        width: 0;
+        height: 0;
+        border: 15px solid;
+        border-color: transparent #e91e63 transparent transparent;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -24px;
+      }
+      .pop p{
+        color: #fff;
+        padding: 5px;
+      }
+      .pop-with-border{
+        margin: 30px;
+        min-width: 200px;
+        max-width: 300px;
+        padding: 10px;
+        border-radius: 8px;
+        position: relative;
+        border: 1px solid #ddd;
+        filter: drop-shadow(0 0 5px #eee);
+      }
+      .pop-with-border::after,::before{
+        display: block;
+        content: '';
+        width: 0;
+        height: 0;
+        border: 8px solid transparent;
+        border-top: 0;
+        border-bottom-color: #fff;
+        position: absolute;
+        top: -8px;
+        left: 30%; 
+        overflow: hidden;
+        z-index: 101;
+      }
+      .pop-with-border:before {
+        top: -9px;
+        border-bottom-color: #ddd;
+        z-index: 99;
+      }
+    </style>
+</head>
+<body>
+<!--关键点-->
+<div>1.使用border生成三角形</div>
+<div>2.使用filter:drop-shadow生成整体阴影</div>
+<div class="border">
+  <div class="border-item1"></div>
+  <div class="border-item2"></div>
+  <div class="border-item3"></div>
+</div>
+<div class="pop">
+  <p>伪元素border实现气泡对话框三角形</p>
+</div>
+<div class="pop">
+  <p>伪元素border实现气泡对话框三角形,现在试着增加内容试试</p>
+</div>
+<div class="pop">
+  <p>伪元素border实现气泡对话框三角形,现在试着增加内容试试，感觉还是不够多啊继续增加看看效果吧~</p>
+</div>
+<div class="pop-with-border">
+  <p>filter:drop-shadow实现整体阴影</p>
+</div>
+<div class="pop-with-border">
+  <p>filter:drop-shadow实现整体阴影，现在试着增加内容试试</p>
+</div>
+<div class="pop-with-border">
+  <p>filter:drop-shadow实现整体阴影，现在试着增加内容试试，感觉还是不够多啊继续增加看看效果吧~</p>
+</div>
+</body>
+</html>

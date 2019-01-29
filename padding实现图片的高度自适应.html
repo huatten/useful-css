@@ -2,22 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>伪类实现未知宽高的元素水平垂直居中</title>
+    <title>padding实现图片的高度自适应</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <style>html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}h1,h2,h3,h4,h5,h6{font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}</style>
     <style>
        .contain{
-           width: 750px;
+           max-width: 750px;
            margin: 10px auto;
            overflow: hidden;
        }
+       .banner{
+           width: 100%;
+           padding-top: 48.8%;
+           position: relative;
+       }
         .contain img{
-            display: inline-block;
+           position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
 
     </style>
 </head>
 <body>
+    <p>图片宽：750， 图片高：366</p>
+    <p>宽高比：750:366 = 2.05</p>
+    <p>假设图片父容器宽度：100%，则图片宽度高度为100% / 2.05 = 48.8%</p>
     <div class="contain">
         <div class="banner"><img src="./image/banner.jpg" alt="banner"/></div>
     </div>
